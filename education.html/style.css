@@ -1,0 +1,274 @@
+
+ @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+   
+ .quicksand-uniquifier{
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+/* nav styles */
+
+.all{
+    max-width:1100px;
+    margin: 0 auto;
+}
+.display-flex{
+    display: flex;
+}
+  .navbar{
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+   
+  }
+  
+  .name{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-left: 10px;
+  }
+  .item{
+    gap: 20px;
+  }
+  .item a:hover{
+    background-color: gainsboro;
+  }
+  
+  .link-1{
+    text-decoration: none;
+    color: orange;
+  
+  }
+  .link-2{
+    text-decoration: none;
+    color: rgba(1, 172, 253, 1);
+  }
+  .link-3{
+    text-decoration: none;
+    color: #05D4DF;
+  }
+  .link-4{
+    text-decoration: none;
+    color: #5D58EF;
+  }
+  .link-5{
+    text-decoration: none;
+  }
+  .items-1{
+   font-size: 1.2rem; 
+   font-weight: bold;
+   list-style: none;
+  }
+  .items-2{
+    font-size: 1.2rem; 
+    font-weight: bold;
+    list-style: none;
+  display: none;
+  }
+  .dropdown{
+    position: fixed;
+list-style: none;
+margin-left: -40px;
+z-index: 999;
+background-color: rgba(173, 168, 168, 0.098);
+backdrop-filter: blur(10px);
+height: 100vh;
+display: none;
+
+  }
+  .dropdown li{
+    width: 100%;
+  }
+  .dropdown a {
+    width: 100%;
+  }
+  .item li:hover .dropdown{
+    display: block;
+  }
+  .items{
+    font-size: 1.2rem;
+   font-weight: 500;
+   list-style: none;
+  }
+  .btn{
+    background-color: orange;
+    color: #FFFFFF;
+    padding: 10px 50px;
+    font-size: 1.2rem;
+   font-weight: 500;
+   border: none;
+   border-radius: 10px;
+  }
+
+  /* banner styles */
+
+  .title{
+    margin: 120px 0;
+  }
+  .heading{
+font-size: 3rem;
+font-weight: bold;
+padding-right: 40px;
+  }
+  .sp-1{
+color: orange ;
+  }
+  .sp-2{
+color: rgba(1, 172, 253, 1);
+  }
+  .button-primary{
+background-color: black;
+color: #FFFFFF;
+font-size: 1.2rem; 
+font-weight: bold;
+padding: 10px 40px;
+border-radius: 10px;
+border: none;
+
+  }
+
+
+/* main part styles */
+
+.part{
+background-image: url(../B11-A2-Kids-School/assets/bg.png);
+}
+.first-part{
+  max-width:1100px;
+  margin: 0 auto;
+}
+.card{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+}
+.card-1{
+text-align: center;
+border: 1px solid rgb(222, 245, 255);
+border-radius: 20px;
+background:
+linear-gradient(rgb(222, 245, 255),rgba(255, 255, 255, 0.800));
+padding: 50px 40px;
+}
+.card-2{
+text-align: center;
+border: 1px solid rgb(255, 244, 220);
+border-radius: 20px;
+background:
+linear-gradient(rgb(255, 244, 220),rgba(255, 255, 255, 0.800));
+padding: 50px 40px;
+}
+.card-3{
+  text-align: center;
+  border: 1px solid rgb(238, 225, 255);
+  border-radius: 20px;
+  background:
+  linear-gradient(rgb(238, 225, 255),rgba(255, 255, 255, 0.800));
+  padding: 50px 40px;
+}
+.first-para{
+  font-size: 0.9rem;
+  font-weight: 500px;
+  color: #808080;
+}
+.first-head{
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+  margin: 50px;
+}
+.card-head{
+  color: #202020 ;
+font-size: 1rem;
+font-weight: bold;
+}
+.btn-1{
+background: none;
+border: none;
+color: #64C8FF;
+}
+.btn-2{
+background: none;
+border: none;
+color: #F0AA00;
+}
+.btn-3{
+background: none;
+border: none;
+color: #8700FF;
+}
+.button-style{
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  gap: 20px;
+  
+}
+.bs{
+  font-size: 1.5rem;
+  font-weight: 500;
+  border-radius: 100px;
+  background-color: rgba(254, 163, 1, 1);
+  border: none;
+  color: #FFFFFF;
+  padding: 17px;
+}
+
+@media screen and (max-width: 576px){
+
+  
+ .item .items, .items-1{
+  display: none;
+ }
+ .item .items-2{
+  justify-content: flex-end;
+ }
+ .navbar{
+ border-bottom: 1px solid red;
+padding: 10px;
+ }
+  .btn{
+    display: none;
+  }
+  .items-2{
+    display: block;
+  }  
+  .banner{
+    flex-direction:  column-reverse;
+    margin: 0 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  .title{
+    margin: 20px 0;
+    text-align: center;
+  }
+  .heading{
+    padding-right: 0;
+  }
+  .card{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .pic{
+    width: 100%;
+  }
+ 
+  
+  .first-part{
+    margin: 0 10px;
+}
+.button-style{
+  display: none;
+}
+
+.first-head{
+  
+  text-align: center;
+}
+
+}
+
+
