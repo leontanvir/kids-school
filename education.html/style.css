@@ -133,11 +133,15 @@ border: none;
 /* main part styles */
 
 .part{
-background-image: url(../B11-A2-Kids-School/assets/bg.png);
+
 }
+
+/* first parts */
+
 .first-part{
   max-width:1100px;
   margin: 0 auto;
+  background-image: url(../B11-A2-Kids-School/assets/bg.png);
 }
 .card{
   display: grid;
@@ -217,6 +221,140 @@ color: #8700FF;
   padding: 17px;
 }
 
+/* second parts */
+
+.second-part{
+ 
+  background: url(../B11-A2-Kids-School/assets/bg.png),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+}
+.card-bellow{
+
+max-width: 1100px;
+margin: 0 auto;
+display: flex;
+justify-content: center;
+
+}
+.card-first{
+margin-right: 20px;
+background-color: white;
+border-radius: 20px;
+}
+
+
+.card-second{
+ display: grid;
+ grid-template-columns: repeat(2,1fr);
+ gap: 20px;
+}
+  
+
+.img-1{
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+.date-1{
+background-color: #2ddcef;
+color: #FFFFFF;
+font-size: 0.9rem;
+width: 150px;
+border-radius: 30px;
+padding: 20px;
+transform: translate( 30px, -50px);
+}
+.card-title{
+font-size: 1.3rem;
+font-weight: bold;
+padding-left: 35px;
+}
+.second-para{
+  font-size: 0.9rem;
+  padding: 10px 35px;
+}
+
+.date-2{
+  background-color: #3ce870;
+  color: #FFFFFF;
+  font-size: 0.9rem;
+  width: 140px;
+  border-radius: 30px;
+  padding: 10px;
+  transform: translate(20px, -40px); 
+}
+.date-3{
+  background-color: #593ce8;
+  color: #FFFFFF;
+  font-size: 0.9rem;
+  width: 140px;
+  border-radius: 30px;
+  padding: 10px;
+  transform: translate(20px, -40px);
+}
+.card-second-1{
+  background-color: white;
+  border-radius: 20px;
+}
+.card-content{
+font-size: 0.9rem;
+font-weight: bold;
+padding: 0 20px;
+margin-top: -20px;
+}
+.button-style-1{
+  text-align: center;
+  margin: 50px;
+}
+.button{
+ 
+  background-color: #000000;
+  color: #FFFFFF;
+  padding: 10px 50px;
+border-radius: 10px;
+border: none;
+margin: 40px;
+}
+
+/* footer styles */
+
+.foot{
+background-color: #01ACFD;
+margin-top: -50px;
+}
+.footer-content{
+max-width: 1100px;
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
+padding: 100px 0 150px 0;
+
+}
+.footer-logo{
+display: flex;
+
+}
+
+.footer-details{
+font-size: .9rem;
+color: rgb(255, 255, 255);
+width: 350px;
+margin-top: 20px;
+}
+.footer-title-1{
+font-size: 2rem;
+font-weight: bold;
+color: #FFFFFF;
+}
+.footer-title-2{
+font-size: 1.2rem;
+font-weight: bold;
+color: #FFFFFF;
+}
+.footer-para{
+  font-size: 1rem;
+  font-weight: 500px;
+  color: #FFFFFF;
+}
+
 @media screen and (max-width: 576px){
 
   
@@ -245,6 +383,7 @@ padding: 10px;
   .title{
     margin: 20px 0;
     text-align: center;
+
   }
   .heading{
     padding-right: 0;
@@ -255,8 +394,6 @@ padding: 10px;
   .pic{
     width: 100%;
   }
- 
-  
   .first-part{
     margin: 0 10px;
 }
@@ -269,6 +406,42 @@ padding: 10px;
   text-align: center;
 }
 
+.second-part{
+margin: 0 auto;
+text-align: center;
+}
+.card-bellow{
+ margin: 0 10px;
+ 
+}
+.card-first{
+  display: none;
+}
+.card-second{
+  gap: 10px;
+}
+.card-second-1{
+  width: 100%;
+}
+.date-3, .date-2{
+  width: 50%;
+}
+
+.footer-content{
+  display: block;
+  width: 100%;
+  margin-top: 50px;
+}
+.foot{
+  width: 100%;
+
+}
+.footer-content{
+  margin: 0 10px;
+}
+.footer-details{
+width: 100%;
+}
 }
 
 
